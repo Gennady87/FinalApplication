@@ -1,4 +1,135 @@
+/*a {*/
+/*    text-decoration: none;*/
+/*    color: brown;*/
+/*}*/
+
+body {
+    background-color: #1c1c1e;
+    color: #fff;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+input[type="text"], input[type="password"], textarea {
+    background-color: #2c2c2e;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    font-family: 'Ubuntu', sans-serif;
+    padding: 10px;
+}
+
+button[type="submit"], input[type="submit"] {
+    background-color: #007aff;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    cursor: pointer;
+    font-family: 'Ubuntu', sans-serif;
+    padding: 10px;
+}
+
 a {
+    color: #007aff;
     text-decoration: none;
-    color: brown;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+/* Добавьте этот код только на страницу "Личный кабинет администратора" */
+form button[type="submit"] {
+    background-color: #ff3b30;
+}
+
+/* Добавьте этот код только на страницу "Заказы" */
+img {
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+/* Добавьте этот код только на страницу "Информация о товаре" */
+img {
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+/* Добавьте этот код только на страницу "Главная страница" */
+fieldset {
+    border: none;
+}
+
+legend {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+label {
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input[type="text"], input[type="password"], textarea {
+    width: 10%;
+}
+
+input[type="radio"] {
+    margin-right: 5px;
+}
+
+input[type="submit"] {
+    margin-top: 10px;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #fff;
+    margin: 20px 0;
+}
+
+/* Добавьте этот код только на страницу "Корзина" */
+h3 {
+    margin-bottom: 20px;
+}
+
+/* Добавьте этот код только на страницу "Корзина" */
+a[href="/order/create"] {
+    background-color: #007aff;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-family: 'Ubuntu', sans-serif;
+    margin-top: 20px;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    width: 100%;
+}
+
+a[href="/order/create"]:hover {
+    background-color: #0052cc;
+}
+
+/* Добавьте этот код только на страницу "Корзина" */
+a[href="/cart/delete/{id}(id=${product.getId()})"] {
+    background-color: #ff3b30;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-family: 'Ubuntu', sans-serif;
+    margin-top: 10px;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+}
+
+a[href="/cart/delete/{id}(id=${product.getId()})"]:hover {
+    background-color: #cc2e23;
 }

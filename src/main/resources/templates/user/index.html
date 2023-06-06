@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Главная страница</title>
+    <link th:href="@{/css/index.css}" type="text/css" rel="stylesheet">
 </head>
 <body>
 
@@ -45,11 +46,11 @@
             <label for="descending_price">Отсортировать по убыванию цены</label>
             <p>Категория товаров: </p>
             <input type="radio" id="furniture" name="contract" value="furniture">
-            <label for="furniture">Мебель</label>
+            <label for="furniture">Ноутбуки</label>
             <input type="radio" id="appliances" name="contract" value="appliances">
-            <label for="appliances">Бытовая техника</label>
+            <label for="appliances">Комплектующие для ПК</label>
             <input type="radio" id="clothes" name="contract" value="clothes">
-            <label for="clothes">Одежда</label>
+            <label for="clothes">Периферия</label>
             <br>
             <br>
             <input type="submit" value="Найти">
